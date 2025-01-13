@@ -34,7 +34,6 @@ signupForm.addEventListener("submit", (e) => {
 
   createUserWithEmailAndPassword(auth, email, password)
     .then(() => {
-      alert("Inscription réussie !");
       signupForm.reset();
     })
     .catch((error) => {
